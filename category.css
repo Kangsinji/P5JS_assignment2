@@ -1,0 +1,138 @@
+/* 기본 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 헤더 스타일 */
+.main-header {
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* 패딩을 15px에서 30px로 늘려 세로 폭을 확장 */
+    padding: 30px 20px; 
+    
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    /* 로고 크기를 살짝 키우고 자간을 넓혀 고급스러운 느낌 추가 */
+    font-size: 2.2rem;
+    font-weight: 200; /* lighter보다 수치로 정밀 조절 */
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.menu-icon {
+    position: absolute;
+    right: 40px; /* 우측 여백을 조금 더 안쪽으로 */
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    width: 28px; /* 아이콘 크기 살짝 확대 */
+    height: 1.5px; /* 선을 더 얇고 날카롭게 */
+    background-color: white;
+    margin: 6px 0;
+}
+
+/* 헤더가 넓어진 만큼 본문과의 간격 조정 */
+.container {
+    max-width: 900px;
+    margin: 60px auto; /* 상단 여백을 40px에서 60px로 확대 */
+    padding: 0 160px 0 60px; 
+}
+
+/* 알파벳 메뉴 - 최적화된 중간 사이즈 2열 배치 */
+.alphabet-nav {
+    position: fixed;
+    right: 60px; 
+    top: 50%;
+    transform: translateY(-50%);
+    
+    display: grid;
+    grid-template-rows: repeat(13, 1fr); 
+    grid-auto-flow: column; 
+    
+    gap: 7px;
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.alphabet-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    text-decoration: none;
+    color: #666;
+    font-size: 13.5px;
+    font-weight: 700;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+}
+
+.alphabet-nav a:hover {
+    background: #1a1a1a;
+    color: white;
+    transform: scale(1.25);
+}
+
+
+/* 섹션 이동 시 위치 보정 */
+.director-section {
+    margin-bottom: 80px;
+    scroll-margin-top: 40px; /* 사이드바 모드에서는 상단 여백을 줄여도 됩니다 */
+}
+
+.alphabet-label {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+}
+
+.page-title {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+/* 리스트 스타일 (세로 배치 및 간격) */
+.director-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* 항목 간의 간격 (더 넓게 조정 가능) */
+}
+
+.director-name {
+    text-decoration: none;
+    color: #e5534b; /* 캡처본의 붉은 계열 색상 */
+    font-size: 1.2rem;
+    width: fit-content;
+}
+
+.director-name:hover {
+    color: #000000; /* 호버 시 색상 변화 */
+    text-decoration: underline;
+}
