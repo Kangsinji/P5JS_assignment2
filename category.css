@@ -21,7 +21,6 @@ body {
     justify-content: center;
     align-items: center;
     
-    /* 패딩을 15px에서 30px로 늘려 세로 폭을 확장 */
     padding: 30px 20px; 
     
     position: relative;
@@ -29,31 +28,30 @@ body {
 }
 
 .logo {
-    /* 로고 크기를 살짝 키우고 자간을 넓혀 고급스러운 느낌 추가 */
     font-size: 2.2rem;
-    font-weight: 200; /* lighter보다 수치로 정밀 조절 */
+    font-weight: 200;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
 
 .menu-icon {
     position: absolute;
-    right: 40px; /* 우측 여백을 조금 더 안쪽으로 */
+    right: 40px;
     cursor: pointer;
 }
 
 .menu-icon span {
     display: block;
-    width: 28px; /* 아이콘 크기 살짝 확대 */
-    height: 1.5px; /* 선을 더 얇고 날카롭게 */
+    width: 28px; 
+    height: 1.5px; 
     background-color: white;
     margin: 6px 0;
 }
 
-/* 헤더가 넓어진 만큼 본문과의 간격 조정 */
+
 .container {
     max-width: 900px;
-    margin: 60px auto; /* 상단 여백을 40px에서 60px로 확대 */
+    margin: 60px auto;
     padding: 0 160px 0 60px; 
 }
 
@@ -101,7 +99,7 @@ body {
 /* 섹션 이동 시 위치 보정 */
 .director-section {
     margin-bottom: 80px;
-    scroll-margin-top: 40px; /* 사이드바 모드에서는 상단 여백을 줄여도 됩니다 */
+    scroll-margin-top: 40px;
 }
 
 .alphabet-label {
@@ -122,12 +120,12 @@ body {
 .director-list {
     display: flex;
     flex-direction: column;
-    gap: 12px; /* 항목 간의 간격 (더 넓게 조정 가능) */
+    gap: 12px; /* 항목 간의 간격 */
 }
 
 .director-name {
     text-decoration: none;
-    color: #e5534b; /* 캡처본의 붉은 계열 색상 */
+    color: #e5534b;
     font-size: 1.2rem;
     width: fit-content;
 }
